@@ -40,7 +40,6 @@ CONFFLAGS = \
 	--disable-compat-libs \
 	--disable-qrencode \
 	--disable-libidn \
-	--disable-vconsole \
 	--disable-sysusers \
 	--disable-firstboot \
 	--disable-xkbcommon \
@@ -54,6 +53,7 @@ CONFFLAGS_deb = \
 	--enable-selinux \
 	--enable-hwdb \
 	--enable-efi \
+	--enable-vconsole \
 	PYTHON=python3
 
 ifeq (, $(filter stage1, $(DEB_BUILD_PROFILES)))
@@ -118,6 +118,7 @@ CONFFLAGS_udeb = \
 	--disable-efi \
 	--disable-gnuefi \
 	--disable-seccomp \
+	--disable-vconsole \
 	--without-python
 
 override_dh_auto_configure:

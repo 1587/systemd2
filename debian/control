@@ -171,6 +171,21 @@ Description: tools for storing and retrieving coredumps
   * systemd-coredump
   * coredumpctl
 
+Package: systemd-vconsole
+Architecture: linux-any
+Multi-arch: foreign
+Section: admin
+Priority: optional
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         systemd,
+         kbd,
+         console-setup-linux
+Description: tool for setting the console font and keymap
+ This package installs the systemd tool for setting the console font and
+ keymap during boot. This package does nothing if console-setup is
+ installed, as that package takes precedence.
+
 Package: libpam-systemd
 Architecture: linux-any
 Multi-Arch: same

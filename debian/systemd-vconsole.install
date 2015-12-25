@@ -1,0 +1,5 @@
+lib/systemd/system/systemd-vconsole-setup.service
+../../extra/units/systemd-vconsole-setup.service.d lib/systemd/system/
+lib/systemd/systemd-vconsole-setup
+usr/share/man/man*/systemd-vconsole*
+usr/share/man/man*/vconsole*
