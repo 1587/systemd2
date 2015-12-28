@@ -1,0 +1,19 @@
+From: Felipe Sateler <fsateler@debian.org>
+Date: Mon, 28 Dec 2015 20:48:28 -0300
+Subject: Make vconsole udev rules conditional
+
+We don't want to run that when setupcon is installed
+---
+ src/vconsole/90-vconsole.rules.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/vconsole/90-vconsole.rules.in b/src/vconsole/90-vconsole.rules.in
+index 35b9ad5..7e5ad25 100644
+--- a/src/vconsole/90-vconsole.rules.in
++++ b/src/vconsole/90-vconsole.rules.in
+@@ -7,4 +7,4 @@
+ 
+ # Each vtcon keeps its own state of fonts.
+ #
+-ACTION=="add", SUBSYSTEM=="vtconsole", KERNEL=="vtcon*", RUN+="@rootlibexecdir@/systemd-vconsole-setup"
++TEST!="/bin/setupcon", ACTION=="add", SUBSYSTEM=="vtconsole", KERNEL=="vtcon*", RUN+="@rootlibexecdir@/systemd-vconsole-setup"

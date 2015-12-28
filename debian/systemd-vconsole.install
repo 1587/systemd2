@@ -3,3 +3,4 @@ lib/systemd/system/systemd-vconsole-setup.service
 lib/systemd/systemd-vconsole-setup
 usr/share/man/man*/systemd-vconsole*
 usr/share/man/man*/vconsole*
+lib/udev/rules.d/90-vconsole.rules
