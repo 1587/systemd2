@@ -178,7 +178,6 @@ Section: admin
 Priority: optional
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         systemd,
          kbd,
          console-setup-linux
 Description: tool for setting the console font and keymap
