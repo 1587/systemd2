@@ -1,3 +1,13 @@
+systemd (230-7~bpo8+2) jessie-backports; urgency=medium
+
+  * [c685eb0] jessie-backport: New patch to fix broken permissions with
+    O_TMPFILE, fixing i386 build issue. Thanks to Felipe Sateler
+    <fsateler@debian.org> and Michael Biebl <biebl@debian.org>
+  * [ccb9801] jessie-backport: New patch to fix GCC ICEs for Debian/jessie
+    on several archs. Thanks to Michael Biebl <biebl@debian.org>
+
+ -- Michael Prokop <mika@debian.org>  Wed, 27 Jul 2016 18:46:16 +0200
+
 systemd (230-7~bpo8+1) jessie-backports; urgency=medium
 
   [ Michael Prokop ]
