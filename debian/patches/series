@@ -55,3 +55,4 @@ debian/Revert-core-enable-TasksMax-for-all-services-by-default-a.patch
 debian/Revert-mount-use-libmount-to-monitor-mountinfo-utab-adopt.patch
 Revert-swap-use-swapon-o.patch
 debian/fileio-fix-broken-permissions-with-O_TMPFILE.patch
+string-util-rework-memory_erase-to-not-use-GCC-optimize-a.patch
